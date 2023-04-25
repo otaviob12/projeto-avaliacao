@@ -1,0 +1,78 @@
+@charset "UFT-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: cadetblue;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 400px;
+    height: 450px;
+    background-color: rgb(36, 60, 61);
+    border-radius: 20px;
+}
+.estrela{
+    background-color: rgb(48, 82, 83) ;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+#estrela1{
+    width: 20px;
+    margin: 15px;
+}
+h1{
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+p{
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 340px;
+    text-align: justify;
+}
+.avaliacao{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.star-icon{
+    list-style-type: none;
+    cursor: pointer;
+    color: #FC7614;
+    font-size: 40px;
+    margin: 10px;
+}
+.star-icon::before{
+    content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+    content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+}
+#texto{
+    text-align: center;
+}
